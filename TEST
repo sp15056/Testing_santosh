@@ -1,0 +1,52 @@
+
+C:\Users\Admin>cd desktop
+
+C:\Users\Admin\Desktop>mkdir yy
+
+C:\Users\Admin\Desktop>cd yy
+
+C:\Users\Admin\Desktop\yy>git clone https://github.com/handleMe/note.git
+Cloning into 'note'...
+remote: Enumerating objects: 129, done.
+remote: Counting objects: 100% (129/129), done.
+remote: Compressing objects: 100% (114/114), done.
+remote: Total 129 (delta 2), reused 126 (delta 2), pack-reused 0
+Receiving objects: 100% (129/129), 778.91 KiB | 2.12 MiB/s, done.
+Resolving deltas: 100% (2/2), done.
+
+C:\Users\Admin\Desktop\yy>cd note
+
+C:\Users\Admin\Desktop\yy\note>git push
+remote: Permission to handleMe/note.git denied to sp15056.
+fatal: unable to access 'https://github.com/handleMe/note.git/': The requested URL returned error: 403
+
+C:\Users\Admin\Desktop\yy\note>git add -all
+error: did you mean `--all` (with two dashes)?
+
+C:\Users\Admin\Desktop\yy\note>git add -1,txt
+error: unknown switch `1'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --sparse              allow updating entries outside of the sparse-checkout cone
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+C:\Users\Admin\Desktop\yy\note>
